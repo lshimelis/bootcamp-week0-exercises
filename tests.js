@@ -119,7 +119,6 @@ shiftRightTests.forEach(([input, output], i) =>
   test(i, shiftRight(...input), input, output)
 )
 console.log('\n')
-
 // announceDate
 console.log('Testing announceDate')
 const announceRegex = /^Today's date is .+. It is .+ in the .+\.$/

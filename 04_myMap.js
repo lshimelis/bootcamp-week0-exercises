@@ -10,6 +10,12 @@
     -> [2, 4, 6]
  */
 
-const myMap = (arr, f) => {}
+const myMap = (arr, f) => {
+  if (arr.length != 0 ){
+  const mapp = [f(arr[0])];
+  return mapp.concat(myMap(arr.slice(1), f))
+  }
+  return [];
+}
 
 module.exports = myMap
